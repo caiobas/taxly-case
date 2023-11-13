@@ -9,7 +9,7 @@ from pdfminer.pdfparser import PDFSyntaxError
 def upload():
     authenticate_request()
     if 'files[]' not in request.files:
-        return 'No file part'
+        return 'No file part', 400
 
     files = request.files.getlist('files[]')
     data_extracted = { 'data': [] }

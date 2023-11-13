@@ -8,8 +8,9 @@ A linguagem de programação escolhida para o projeto foi o Python devido ao gra
 
 - Copie o arquivo `.env.example` para o arquivo `.env`.
   - Monte a url do mongoDB e substitua na variável `DATABASE_URI`
-- Abra um terminal na raiz do projeto e rode o comando `docker-compose up`.
+- Abra um terminal na raiz do projeto e rode o comando `make up`.
 - O projeto deverá estar rodando no endereço http://localhost:5000.
+- Opcional: rode o comando `make update` quando atualizar o código para ter efeito.
 
 ## Endpoint
 
