@@ -84,3 +84,29 @@ Os dados estão sendo extraídos de acordo com padrões REGEX configurados de ac
 - doc_type -> Se o arquivo não for recibo, identifica o tipo de doc_type(DAS ou DAMSP)
 
 Para extração de novos dados, deverão ser mapeados por padrão REGEX e inseridos na response do endpoint.
+
+## Estrutura de pastas
+
+    app/
+    ├── __init__.py
+    ├── app.py
+    ├── authenticate.py
+    ├── config.py
+    ├── extensions.py
+    ├── main/
+        ├── data_extraction/
+        │   ├── __init__.py
+        │   ├── extractData.py
+        │   ├── getAmount.py
+        │   ├── getBarCode.py
+        │   ├── getCNPJ.py
+        │   ├── getDate.py
+        │   ├── getDocMonth.py
+        │   ├── getDocType.py
+        │   ├── getSocialReason.py
+        │   ├── isReceipt.py
+        │   └── regexPatterns.py
+        ├── enum/
+        │   ├── docTypeEnum.py
+        ├── __init__.py
+        └── routes.py
